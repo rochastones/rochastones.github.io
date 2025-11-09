@@ -373,7 +373,14 @@ footer .credit {
 }
 
 .texto-convite {
-  /* Cor e tamanho da fonte podem ser ajustados aqui */
+  /* Insere uma nova linha, posicionando o texto a baixo da imagem. */
+  display: block;
+
+  /* Cor e tamanho da fonte */
   color: #333;
-  font-size: 1, 5em;
+
+  font-size: 1em;
+
+  /* Adiciona um espaço acima da frase para separação da imagem.*/
+  margin-top: 8px;
 }
