@@ -1,0 +1,379 @@
+:root {
+  --brand-900: #000000;
+  --brand-700: #000000;
+  --brand-500: #ffcc00;
+  --bg-paper: #f1f1f1;
+}
+body {
+  background: var(--bg-paper);
+}
+
+/* Ajustes do rodapé */
+.brand-bg {
+  background: var(--brand-700);
+  max-width: 1310px;
+  margin: 0 auto;
+  border-radius: 0 0 8px 8px;
+}
+
+.brand-text {
+  color: var(--brand-900);
+}
+
+.hero {
+  min-height: 40vh;
+  height: 300px; /* altura fixa (ajuste o valor que achar melhor) */
+  background-position: center 30px;
+  border-radius: 0.5rem;
+  background-size: contain; /* mantém a imagem inteira sem cortar */
+  background-image: url("img/afro-brasil-local.png");
+  background-repeat: no-repeat; /* a imagem não se repete. Ela aparece apenas uma vez.*/
+  border-radius: 8px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+footer .credit {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+.social-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-left: 8px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--brand-700);
+}
+
+/* Aumento da altura da tarja do menu */
+.brand-bg .navbar {
+  min-height: 90px;
+  padding: 1rem 0;
+}
+
+/* Aumento do tamanho da logo e mais espaço */
+.navbar-brand {
+  font-size: 1.5rem;
+  padding: 0.75rem 1rem;
+  margin-right: 2.5rem;
+}
+
+/* Aumento do tamanho da imagem da logo */
+.navbar-brand img {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+/* Aumento do tamanho das letras do menu */
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  padding: 0.75rem 1.25rem !important;
+  font-weight: 500;
+}
+
+/* Efeitos de hover para melhorar a interatividade */
+.navbar-nav .nav-link:hover {
+  color: var(--brand-500) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
+}
+
+/* Item ativo com destaque */
+.navbar-nav .nav-link.active {
+  color: var(--brand-500) !important;
+  font-weight: 600;
+}
+
+/* Personalização do botão hamburguer para mobile */
+.navbar-toggler {
+  border-color: var(--brand-500);
+  padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 204, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .navbar-brand img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.75rem 1rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ===== Estilos especificos das páginas index.html e sobre.html ===== */
+
+.text-center.mb-5 {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.section-title:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--secondary-color);
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+.content-section {
+  padding: 80px 0;
+}
+
+.content-section-alt {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.service-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.service-card .card-body {
+  padding: 25px;
+}
+
+.service-card .card-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.service-card .card-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+.info-box {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.img-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-height: 500px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+/* Efeito zoom na imagem ao passar o mouse*/
+.img-container:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .content-section,
+  .content-section-alt {
+    padding: 60px 0;
+  }
+}
+
+/* ===== Estilos especificos da página educacao.html ===== */
+
+.video-section {
+  background: #f8f9fa;
+  padding: 50px 0;
+}
+
+.video-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.guide-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+.guide-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.guide-card .card-body {
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.guide-icon {
+  width: 80px;
+  height: 80px;
+  background: #6c757d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.guide-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.guide-card .card-title {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guide-card .card-text {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.guide-link {
+  display: inline-block;
+  background: #495057;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.guide-link:hover {
+  background: #6c757d;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ===== Estilos especificos da página acervo.html ===== */
+
+.imagem-pequena {
+  width: 250px; /* Largura e altura FIXAS para o container */
+  height: 150px;
+
+  /* A imagem preenche o espaço sem ser esticada */
+  object-fit: cover;
+
+  /* Centraliza e corta as bordas */
+  object-position: center;
+
+  border-radius: 15px;
+}
+
+.texto-convite {
+  /* Cor e tamanho da fonte podem ser ajustados aqui */
+  color: #333;
+  font-size: 1, 5em;
+}
