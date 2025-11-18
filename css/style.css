@@ -8,7 +8,6 @@ body {
   background: var(--bg-paper);
 }
 
-/* Ajustes do rodapé */
 .brand-bg {
   background: var(--brand-700);
   max-width: 1310px;
@@ -52,26 +51,22 @@ footer .credit {
   color: var(--brand-700);
 }
 
-/* Aumento da altura da tarja do menu */
 .brand-bg .navbar {
   min-height: 90px;
   padding: 1rem 0;
 }
 
-/* Aumento do tamanho da logo e mais espaço */
 .navbar-brand {
   font-size: 1.5rem;
   padding: 0.75rem 1rem;
   margin-right: 2.5rem;
 }
 
-/* Aumento do tamanho da imagem da logo */
 .navbar-brand img {
   width: 48px !important;
   height: 48px !important;
 }
 
-/* Aumento do tamanho das letras do menu */
 .navbar-nav .nav-link {
   font-size: 1.1rem;
   padding: 0.75rem 1.25rem !important;
@@ -87,13 +82,11 @@ footer .credit {
   transition: all 0.3s ease;
 }
 
-/* Item ativo com destaque */
 .navbar-nav .nav-link.active {
   color: var(--brand-500) !important;
   font-weight: 600;
 }
 
-/* Personalização do botão hamburguer para mobile */
 .navbar-toggler {
   border-color: var(--brand-500);
   padding: 0.5rem;
@@ -127,14 +120,22 @@ footer .credit {
   }
 }
 
-/* ===== Estilos especificos das páginas index.html e sobre.html ===== */
+/* === Estilos especificos das páginas index.html e sobre.html === */
 
 .text-center.mb-5 {
   font-size: 1.2rem;
   color: #666;
-  max-width: 800px;
+  max-width: 980px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5px;
+}
+
+.text-center.mb-6 {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 900px;
+  margin-left: -30px;
 }
 
 .section-title {
@@ -144,6 +145,7 @@ footer .credit {
   margin-bottom: 30px;
   text-align: center;
   position: relative;
+  margin-bottom: 5px;
 }
 
 .section-title:after {
@@ -251,7 +253,7 @@ footer .credit {
   }
 }
 
-/* ===== Estilos especificos da página educacao.html ===== */
+/* === Estilos especificos da página educacao.html === */
 
 .video-section {
   background: #f8f9fa;
@@ -357,30 +359,19 @@ footer .credit {
   transform: translateY(-2px);
 }
 
-/* ===== Estilos especificos da página acervo.html ===== */
+/* === Estilos especificos da página acervo.html === */
 
 .imagem-pequena {
-  width: 250px; /* Largura e altura FIXAS para o container */
+  width: 250px;
   height: 150px;
-
-  /* A imagem preenche o espaço sem ser esticada */
   object-fit: cover;
-
-  /* Centraliza e corta as bordas */
   object-position: center;
-
   border-radius: 15px;
 }
 
 .texto-convite {
-  /* Insere uma nova linha, posicionando o texto a baixo da imagem. */
   display: block;
-
-  /* Cor e tamanho da fonte */
   color: #333;
-
   font-size: 1em;
-
-  /* Adiciona um espaço acima da frase para separação da imagem.*/
   margin-top: 8px;
 }
